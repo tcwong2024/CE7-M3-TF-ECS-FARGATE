@@ -53,13 +53,10 @@ jobs:
   terraform-wait:
     needs: terraform-create
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: terraform
 
     steps:
-      - name: Pause 10min to verify ecs creation
-        run: sleep 600
+      - name: Pause 4 mins to verify ecs creation
+        run: sleep 240
 
   terraform-destroy:
     needs: terraform-wait
