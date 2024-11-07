@@ -14,7 +14,7 @@ variable "ecs_alb" {
 variable "vpc_id" {
   description = "The ID of the VPC"
   type        = string
-  default     = "vpc-0120652135e4a60ce"
+  default     = "vpc-0c8ffe73a80da47a6"
 }
 
 variable "ex_role_arn" {
@@ -27,7 +27,7 @@ variable "ex_role_arn" {
 variable "sg_id" {
   description = "The security group id"
   type        = string
-  default     = "sg-06a0e7618979aa33e"
+  default     = "sg-07daf8e6fab0ec855"
 }
 
 # ECS target group
